@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice For Freelances</title>
+    <title>InvoiceJet</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="invoice_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header></header>
+    <header>
+
+        <nav class="navbar">
+            
+            <div class="logo">
+                <img src="invoice_icon.png" alt="logo" class="logo-img">
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="sign-in">sign in</button>
+                <button class="sign-up">sign up</button>
+            </div>
+
+        </nav>
+
+    </header>
     
     <main>
         
         <section class="hero">
-            
-            <h1>Create professional invoices in minutes.</h1>
 
-            <div class="hero-elements">
-                
-                <div class="hero-text-element">
+            <h1>Create professional invoices in minutes.</h1>
+            
+             <div class="hero-elements">
+            
+                <div class="hero-text-and-button-element">
                     <p>A simple invoicing tool for freelancers to generate, download, and send clean invoices without hassle.</p>
                     <button class="create-invoice">Create Invoice</button>
                 </div>
                 
                 <div class="hero-img-element">
-                    <img src="" alt="invoice sample img" class="hero-img">
+                    <img src="invoice_image.webp" alt="invoice sample img" class="hero-img">
                 </div>
 
             </div>
@@ -37,19 +56,25 @@
             <div class="problem-elements">
                 
                 <div class="problem-element">
-                    <img src="" alt="Manual Templates Image" class="problem-icon">
+                    <div class="problem-icon-container">
+                        <img src="problem_icon_1.png" alt="Manual Templates Image" class="problem-icon one">
+                    </div>
                     <h3>Manual Templates</h3>
                     <p>Wasting time creating invoices in Word or Excel.</p>
                 </div>
 
                 <div class="problem-element">
-                    <img src="" alt="Disorganized Payments Image" class="problem-icon">
+                    <div class="problem-icon-container">
+                        <img src="problem_icon_2.png" alt="Disorganized Payments Image" class="problem-icon two">
+                    </div>
                     <h3>Disorganized Payments</h3>
                     <p>Losing track of who has paid and who hasn’t.</p>
                 </div>
 
                 <div class="problem-element">
-                    <img src="" alt="Unprofessional Look Image" class="problem-icon">
+                    <div class="problem-icon-container">
+                        <img src="problem_icon_3.png" alt="Unprofessional Look Image" class="problem-icon three">
+                    </div>
                     <h3>Unprofessional Look</h3>
                     <p>Invoices that don’t reflect your work quality.</p>
                 </div>
@@ -65,19 +90,25 @@
             <div class="solution-elements">
 
                 <div class="solution-element">
-                    <img src="" alt="Customizable Templates" class="solution-icon">
+                    <div class="solution-icon-container">
+                        <img src="solution_icon_1.png" alt="Customizable Templates" class="solution-icon">
+                    </div>
                     <h3>Customizable Templates</h3>
                     <p>Use clean, professional invoice templates ready to send to clients.</p>
                 </div>
 
                 <div class="solution-element">
-                    <img src="" alt="Automatic Calculations" class="solution-icon">
+                    <div class="solution-icon-container">
+                        <img src="solution_icon_2.png" alt="Automatic Calculations" class="solution-icon">
+                    </div>
                     <h3>Automatic Calculations</h3>
                     <p>Totals, taxes, and amounts are calculated automatically.</p>
                 </div>
 
                 <div class="solution-element">
-                    <img src="" alt="Client Management" class="solution-icon">
+                    <div class="solution-icon-container">
+                        <img src="solution_icon_3.png" alt="Client Management" class="solution-icon">
+                    </div>
                     <h3>Client Management</h3>
                     <p>Save client details and reuse them anytime.</p>
                 </div>
@@ -93,20 +124,26 @@
             <div class="how-it-works-elements">
             
                 <div class="how-it-works-element">
-                    <div class="number-style">1</div>
-                    <h3>Enter Your Information</h3>
+                    <div class="number-and-subheading-container">
+                        <div class="number-style">1</div>
+                        <h3>Enter Your Information</h3>
+                    </div>
                     <p>Add your business and client details.</p>
                 </div>
 
                 <div class="how-it-works-element">
-                    <div class="number-style">2</div>
-                    <h3>Add Invoice Items</h3>
+                    <div class="number-and-subheading-container">
+                        <div class="number-style">2</div>
+                        <h3>Add Invoice Items</h3>
+                    </div>
                     <p>List services, rates, and quantities.</p>
                 </div>
 
                 <div class="how-it-works-element">
-                    <div class="number-style">3</div>
-                    <h3>Send or Download</h3>
+                    <div class="number-and-subheading-container">
+                        <div class="number-style">3</div>
+                        <h3>Send or Download</h3>
+                    </div>
                     <p>Send the invoice or download it as a PDF.</p>
                 </div>
 
@@ -121,25 +158,35 @@
             <div class="pricing-plans">
             
                 <div class="plan free">
-                    <p>₹0 / month</p>
-                    <ul>
-                        <li>Create unlimited invoices</li>
-                        <li>Basic invoice templates</li>
-                    </ul>
+                    <div class="plan-type free">
+                        <h3 class="plan-text free">Free Plan</h3>
+                        <h3>₹0<sub>/mo</sub></h3>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>Create unlimited invoices</li>
+                            <li>Basic invoice templates</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="plan pro">
-                    <p>₹499 / month</p>
-                    <ul>
-                        <li>All Free features</li>
-                        <li>Advanced templates</li>
-                        <li>Payment reminders</li>
-                    </ul>
+                    <div class="plan-type pro">
+                        <h3 class="plan-text pro">Pro Plan</h3>
+                        <h3>₹499<sub>/mo</sub></h3>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>All Free features</li>
+                            <li>Advanced templates</li>
+                            <li>Payment reminders</li>
+                        </ul>
+                    </div>
                 </div>
             
             </div>
 
-            <button class="cta">Get Started Now</button>
+            <button class="price-cta-button">Get Started Now</button>
         
         </section>
         
@@ -148,14 +195,14 @@
             <h2>Ready to streamline your invoicing?</h2>
             <p>Join freelancers who get paid faster with simple, professional invoices.</p>
             <button class="create-invoice">Create Invoice</button>
+
         </section>
     
     </main>
     
     <footer>
 
-        <p>© 2026 InvoiceJet</p>
-        <p>Privacy Policy · Terms of Service</p>
+        <p>© 2026 InvoiceJet · Privacy Policy · Terms of Service</p>
 
     </footer>
 

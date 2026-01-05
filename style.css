@@ -1,0 +1,346 @@
+/* * { 
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+body {
+    margin: 0px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+h1 { 
+    font-weight: 700;
+}
+h2 {
+    font-weight: 600; 
+}
+p  { 
+    font-weight: 400; 
+}
+button { 
+    padding: 8px 14px;
+    height: 32;
+    width: auto;
+    font-size: 14px;
+    border-radius: 3px;
+    border-color: transparent;
+    color: white;
+    background-color: #2563EB;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+ul {
+    list-style-type: "✔️";
+}
+li {
+    padding-left: 10px;
+}
+
+footer {
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Makes the blue "glow" slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.navbar{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E5E7EB;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.logo-img {
+    height: 30px;
+    width: auto;
+}
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.nav-buttons .sign-in {
+    background-color: white;
+    color: #2563EB;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+.hero h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+.hero-elements {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+}
+.hero-text-and-button-element {
+    margin-left: 30px;
+    padding: 20px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.hero-text-and-button-element p {
+    margin-top: 0;
+}
+.hero-img-element {
+    height: 200px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.hero-img {
+    position: absolute;
+    top: 0; /* Align to the top of the container */
+    left: 0;
+    height: 320px; /* Again, a fixed height */
+    width: auto;
+}
+
+.problem {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.problem-elements {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.problem-element {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.problem-icon-container {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.problem-icon {
+    height: 40px;
+    /* max-height: 80%;
+    max-width: 80%; */ /* Normalize icons at the asset level from next time and do this rather then fixing individual image */
+}
+.problem-icon.one {  
+    height: 45px;
+}
+.problem-icon.two {
+    height: 35px;
+}
+.problem-icon.three {
+    height: 60px;
+}
+.problem-element h3 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.problem-element p {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.solution {
+    padding: 20px 20px;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.solution-elements {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.solution-element {
+    flex: 1;  /* when i use flex:1 in child it will always refer to parent irrespective of it has a flexbox in it or not, what it does is gives child element fixed width */
+    min-width: 0;
+    padding: 20px 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.solution-icon-container {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+.solution-icon {
+    max-height: 75%;
+}
+.solution-element h3 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.solution-element p {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.how-it-works{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.how-it-works-elements{
+    max-width: 900px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.how-it-works-element{
+    flex: 1;
+    min-width: 0;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number-and-subheading-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.number-style{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #2563EB;
+}
+.how-it-works-element p {
+    padding: 4px 4px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #E5E7EB;
+}
+
+.pricing {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+.pricing-plans {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.plan {
+    flex: 1;
+    min-width: 0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.plan.free {
+    background-color: white;
+}
+.plan.pro {
+    color: white;
+}
+.plan-type {
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-type.pro {
+     background-color: #2563EB;
+}
+.plan h3 {
+    margin: 0px;
+    padding: 15px 0;
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+.plan.pro h3{
+    border-bottom: 1px solid white;
+}
+.plan .plan-features {
+    border-radius: 4px;
+    background-color: white;
+}
+.plan.pro .plan-features {
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.pricing .price-cta-button {
+    padding: 10px 18px;
+    margin: 20px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cta h2 {
+    margin-bottom: 0;
+}
+.cta button {
+    margin-bottom: 15px;
+    padding: 8px 10px;
+}
+
